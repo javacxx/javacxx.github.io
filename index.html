@@ -352,6 +352,183 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://javacxx.github.io/2019/01/30/4、注释/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xx.chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xx.chen blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/30/4、注释/" class="post-title-link" itemprop="url">4、注释</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-30 19:30:49" itemprop="dateCreated datePublished" datetime="2019-01-30T19:30:49+08:00">2019-01-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-31 10:30:02" itemprop="dateModified" datetime="2019-01-31T10:30:02+08:00">2019-01-31</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/代码整洁之道/" itemprop="url" rel="index"><span itemprop="name">代码整洁之道</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="首先应该避免注释"><a href="#首先应该避免注释" class="headerlink" title="首先应该避免注释"></a>首先应该避免注释</h3><h4 id="注释并不“纯然地好”"><a href="#注释并不“纯然地好”" class="headerlink" title="注释并不“纯然地好”"></a>注释并不“纯然地好”</h4><p>实际上，注释最多也就是一种必须的恶。注释的恰当用法是弥补我们在用代码表达意图时的失败。如果你发现自己需要写注释，再想想看是否有办法翻盘，用代码来表达。</p>
+<h4 id="不准确的注释要比没注释坏得多"><a href="#不准确的注释要比没注释坏得多" class="headerlink" title="不准确的注释要比没注释坏得多"></a>不准确的注释要比没注释坏得多</h4><p>注释存在的时间越久，就离其所描述的代码越远，越来越变得全然错误。原因很简单。程序员不能坚持维护注释。代码在变动，在演化。从这里移到那里。彼此分离、重造又合到一处。很不幸，注释并不总是随之变动。我们应该多花心思尽量减少注释量，真实只在一处地方有：代码。</p>
+<h3 id="二、应对糟糕的代码"><a href="#二、应对糟糕的代码" class="headerlink" title="二、应对糟糕的代码"></a>二、应对糟糕的代码</h3><h4 id="别给糟糕的代码加注释——重新写吧。"><a href="#别给糟糕的代码加注释——重新写吧。" class="headerlink" title="别给糟糕的代码加注释——重新写吧。"></a>别给糟糕的代码加注释——重新写吧。</h4><p>与其花时间编写解释你搞出的糟糕的代码的注释，不如花时间清洁那堆糟糕的代码。很多时候，简单到只需要创建一个描述与注释所言同一事物的函数即可。</p>
+<h3 id="三、好注释"><a href="#三、好注释" class="headerlink" title="三、好注释"></a>三、好注释</h3><p>法律信息：版权说明、版本号、生成日期、作者、<br>提供基本信息的注释<br>提供了某个动作后面的意图。<br>阐释<br>警示<br>TODO注释   解释为什么该函数的实现部分无所作为<br>公共API，就该为它编写良好的Javadoc</p>
+<h3 id="四、坏注释"><a href="#四、坏注释" class="headerlink" title="四、坏注释"></a>四、坏注释</h3><h4 id="坏注释都是糟糕的代码的支撑或借口"><a href="#坏注释都是糟糕的代码的支撑或借口" class="headerlink" title="坏注释都是糟糕的代码的支撑或借口"></a>坏注释都是糟糕的代码的支撑或借口</h4><p>喃喃自语：如果写注释，就要花必要的时间确保写出最好的注释。任何迫使读者查看其他模块的注释，都没能与读者沟通好，不值所费。<br>多余注释：不能比代码本身提供更多的信息。没有证明代码的意义，也没有给出代码的意图或逻辑。读它并不比读代码更容易。<br>误导性、不精确的注释<br>循规蹈矩式注释：每个函数都要有 Javadoc 或每个变量都要有注释的规矩是愚蠢可笑的。<br>日志型注释：每次编辑代码时，记录每次修改的注释。现在有源代码控制系统可用，这种冗长的记录只会让模块变得凌乱不堪，应当全部删除。<br>废话注释：对于显然之事喋喋不休，毫无新意。用整理代码的决心替代创造废话。<br>标记位置：尽量少用标记栏，只在特别有价值的时候用。更应该做的是缩短函数。<br>归属于署名：源代码控制系统非常善于记住是谁在何时添加了什么。<br>注释掉的代码：源代码控制系统可以记下代码，无需再用注释来标记，删掉即可。<br>非本地注释：如果要写注释，请确保它描述了离它最近的代码。<br>信息过多：别在注释中添加有趣的历史性话题或者无关的细节描述。<br>注释代码联系不明显：注释及其描述的代码之间的联系应该显而易见。注释的作用是解释未能自行解释的代码。如果注释本身还需要解释，就太遗憾了。<br>非公共代码中的Javadoc</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://javacxx.github.io/2019/01/30/hello-world/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -558,7 +735,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -575,7 +752,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -592,7 +775,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1119,6 +1306,8 @@
 
   
   
+    
+      
     
       
     
